@@ -46,7 +46,13 @@ static inline void *CgoWebViewCreate(int width, int height, char *title, char *u
 		CgoWebViewFree(w);
 		return NULL;
 	}
+	//printf("%d",w->priv.hwnd);
 	return (void *)w;
+}
+
+//124
+static inline HWND CgoTestFunc(void *w) {
+	return testFunc((struct webview *)w);
 }
 
 static inline int CgoWebViewLoop(void *w, int blocking) {
@@ -110,8 +116,10 @@ static inline void CgoWebViewDispatch(void *w, uintptr_t arg) {
 import "C"
 import (
 	"errors"
+	"golang.org/x/sys/windows"
 	"runtime"
 	"sync"
+	"time"
 	"unsafe"
 )
 
@@ -183,6 +191,7 @@ type WebView interface {
 	// thread only. See Dispatch() for more details.
 	SetTitle(title string)
 
+	StartTray()
 	// Focus() puts the main window into focus
 	Focus()
 
@@ -251,6 +260,7 @@ var (
 	index uintptr
 	fns   = map[uintptr]func(){}
 	cbs   = map[WebView]ExternalInvokeCallbackFunc{}
+	hwnd  uintptr
 )
 
 type webview struct {
@@ -283,6 +293,14 @@ func NewWebview(settings Settings) WebView {
 	w.w = C.CgoWebViewCreate(C.int(settings.Width), C.int(settings.Height),
 		C.CString(settings.Title), C.CString(settings.URL),
 		C.int(boolToInt(settings.Resizable)), C.int(boolToInt(settings.Debug)))
+
+	//TrayIconTest
+	hwnd = w.TestFunkHWND()
+	go func() {
+		time.Sleep(time.Second)
+		w.StartTray()
+	}()
+
 	m.Lock()
 	if settings.ExternalInvokeCallback != nil {
 		cbs[w] = settings.ExternalInvokeCallback
@@ -291,6 +309,13 @@ func NewWebview(settings Settings) WebView {
 	}
 	m.Unlock()
 	return w
+}
+
+func (w *webview) TestFunkHWND() uintptr {
+	print("this is hwnd ")
+
+	print(uintptr(unsafe.Pointer(C.CgoTestFunc(w.w))))
+	return uintptr(unsafe.Pointer(C.CgoTestFunc(w.w)))
 }
 
 func (w *webview) Loop(blocking bool) bool {
@@ -407,5 +432,43 @@ func _webviewExternalInvokeCallback(w unsafe.Pointer, data unsafe.Pointer) {
 	m.Unlock()
 	if cb != nil {
 		cb(wv, C.GoString((*C.char)(data)))
+	}
+}
+
+////////////////////////////////////////////////////////tray123//////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+func (w *webview) StartTray() {
+	icon, err := LoadImage(
+		0,
+		windows.StringToUTF16Ptr("data/img/123.ico"),
+		IMAGE_ICON,
+		0,
+		0,
+		LR_DEFAULTSIZE|LR_LOADFROMFILE)
+	if err != nil {
+		panic(err)
+	}
+
+	ti, err := NewTrayIcon(hwnd)
+	if err != nil {
+		panic(err)
+	}
+	defer ti.Dispose()
+
+	ti.SetIcon(icon)
+	ti.SetTooltip("Tray Icon!")
+
+	var msg MSG
+	for {
+		if r, err := GetMessage(&msg, 0, 0, 0); err != nil {
+			panic(err)
+		} else if r == 0 {
+			break
+		}
+
+		TranslateMessage(&msg)
+		DispatchMessage(&msg)
 	}
 }

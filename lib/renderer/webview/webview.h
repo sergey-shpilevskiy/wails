@@ -172,7 +172,8 @@ struct webview_priv
 
   WEBVIEW_API int webview(const char *title, const char *url, int width,
                           int height, int resizable);
-
+//123
+  WEBVIEW_API HWND testFunc(struct webview *w);
   WEBVIEW_API int webview_init(struct webview *w);
   WEBVIEW_API int webview_loop(struct webview *w, int blocking);
   WEBVIEW_API int webview_eval(struct webview *w, const char *js);
@@ -329,6 +330,12 @@ struct webview_priv
     (void)triggered_with_keyboard;
     (void)userdata;
     return TRUE;
+  }
+
+  WEBVIEW_API HWND testFunc(struct webview *w)
+  {
+    printf("--%d",w->priv.hwnd);
+    return w->priv.hwnd;
   }
 
   WEBVIEW_API int webview_init(struct webview *w)
@@ -1443,8 +1450,28 @@ struct webview_priv
       }
       return TRUE;
     }
+    case SW_MINIMIZE:
+    {
+      if (wParam == 2097152){
+            ShowWindow(hwnd, SW_HIDE);
+            return TRUE;
+      } else {
+            return DefWindowProc(hwnd, uMsg, wParam, lParam);
+      }
+    }
     case WM_WEBVIEW_DISPATCH:
     {
+      //printf("-%d", (int)lParam);
+      if ((int)lParam>=512 & (int)lParam <= 521){
+        if ((int)lParam == 513){
+            ShowWindow(hwnd, SW_NORMAL);
+            SetForegroundWindow(hwnd);
+        }
+
+        return DefWindowProc(hwnd, uMsg, wParam, lParam);
+      }
+
+
       webview_dispatch_fn f = (webview_dispatch_fn)wParam;
       void *arg = (void *)lParam;
       (*f)(w, arg);
@@ -1486,6 +1513,11 @@ struct webview_priv
     RegCloseKey(hKey);
     return 0;
   }
+  WEBVIEW_API HWND testFunc(struct webview *w)
+    {
+      printf("--%d",w->priv.hwnd);
+      return w->priv.hwnd;
+    }
 
   WEBVIEW_API int webview_init(struct webview *w)
   {
@@ -2122,7 +2154,11 @@ struct webview_priv
     }
     w->external_invoke_cb(w, [(NSString *)(arg) UTF8String]);
   }
-
+  WEBVIEW_API HWND testFunc(struct webview *w)
+  {
+        printf("--%d",w->priv.hwnd);
+    return w->priv.hwnd;
+  }
   WEBVIEW_API int webview_init(struct webview *w)
   {
     w->priv.pool = [[NSAutoreleasePool alloc] init];
