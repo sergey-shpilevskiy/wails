@@ -1,4 +1,4 @@
-module github.com/wailsapp/wails
+module github.com/sergey-shpilevskiy/wails
 
 require (
 	github.com/Masterminds/semver v1.4.2
