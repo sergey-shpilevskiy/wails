@@ -75,7 +75,6 @@ const (
 	NixOS
 	// Artix linux distribution
 	ArtixLinux
-
 )
 
 // DistroInfo contains all the information relating to a linux distribution
@@ -328,7 +327,7 @@ func RequestSupportForDistribution(distroInfo *DistroInfo) error {
 	str.WriteString(fmt.Sprintf("| Distribution Version   | %s |\n", distroInfo.Release))
 
 	body := fmt.Sprintf("**Description**\nDistribution '%s' is currently unsupported.\n\n**Further Information**\n\n%s\n\n*Please add any extra information here, EG: libraries that are needed to make the distribution work, or commands to install them*", distroInfo.ID, str.String())
-	fullURL := "https://github.com/wailsapp/wails/issues/new?"
+	fullURL := "https://github.com/sergey-shpilevskiy/wails/issues/new?"
 	params := "title=" + title + "&body=" + body
 
 	fmt.Println("Opening browser to file request.")

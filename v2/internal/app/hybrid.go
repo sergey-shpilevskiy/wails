@@ -1,3 +1,4 @@
+//go:build !server && !desktop && hybrid
 // +build !server,!desktop,hybrid
 
 package app
@@ -7,13 +8,13 @@ import (
 	"path/filepath"
 
 	"github.com/leaanthony/clir"
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/ffenestri"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
-	"github.com/wailsapp/wails/v2/internal/subsystem"
-	"github.com/wailsapp/wails/v2/internal/webserver"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/binding"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/ffenestri"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/subsystem"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/webserver"
 )
 
 // Config defines the Application's configuration

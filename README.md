@@ -3,15 +3,15 @@
 </p>
 <p align="center">
    Build desktop applications using Go & Web Technologies.<br/><br/>
-   <a href="https://github.com/wailsapp/wails/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
-   <a href="https://goreportcard.com/report/github.com/wailsapp/wails"><img src="https://goreportcard.com/badge/github.com/wailsapp/wails"/></a>
-   <a href="http://godoc.org/github.com/wailsapp/wails"><img src="https://img.shields.io/badge/godoc-reference-blue.svg"/></a>
+   <a href="https://github.com/sergey-shpilevskiy/wails/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+   <a href="https://goreportcard.com/report/github.com/sergey-shpilevskiy/wails"><img src="https://goreportcard.com/badge/github.com/sergey-shpilevskiy/wails"/></a>
+   <a href="http://godoc.org/github.com/sergey-shpilevskiy/wails"><img src="https://img.shields.io/badge/godoc-reference-blue.svg"/></a>
    <a href="https://www.codefactor.io/repository/github/wailsapp/wails"><img src="https://www.codefactor.io/repository/github/wailsapp/wails/badge" alt="CodeFactor" /></a>
-   <a href="https://github.com/wailsapp/wails/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="CodeFactor" /></a>
+   <a href="https://github.com/sergey-shpilevskiy/wails/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="CodeFactor" /></a>
    <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fwailsapp%2Fwails?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwailsapp%2Fwails.svg?type=shield"/></a>
    <a href="https://houndci.com"><img src="https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"/></a>
    <a href="https://github.com/avelino/awesome-go" rel="nofollow"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
-   <a href="https://github.com/wailsapp/wails/workflows/release/badge.svg?branch=master" rel="nofollow"><img src="https://github.com/wailsapp/wails/workflows/release/badge.svg?branch=master" alt="Release Pipelines"></a>
+   <a href="https://github.com/sergey-shpilevskiy/wails/workflows/release/badge.svg?branch=master" rel="nofollow"><img src="https://github.com/sergey-shpilevskiy/wails/workflows/release/badge.svg?branch=master" alt="Release Pipelines"></a>
 </p>
 
 <span id="nav-1"></span>
@@ -244,7 +244,7 @@ go.
 Installation is as simple as running the following command:
 
 ```
-go get -u github.com/wailsapp/wails/cmd/wails
+go get -u github.com/sergey-shpilevskiy/wails/cmd/wails
 ```
 
 <span id="nav-7-1"></span>

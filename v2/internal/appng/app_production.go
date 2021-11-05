@@ -5,15 +5,15 @@ package appng
 
 import (
 	"context"
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop"
-	"github.com/wailsapp/wails/v2/internal/frontend/dispatcher"
-	"github.com/wailsapp/wails/v2/internal/frontend/runtime"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/menumanager"
-	"github.com/wailsapp/wails/v2/internal/signal"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/binding"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend/desktop"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend/dispatcher"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/menumanager"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/signal"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 )
 
 // App defines a Wails application structure

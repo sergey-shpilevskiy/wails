@@ -11,18 +11,18 @@ import (
 	"strings"
 
 	"github.com/leaanthony/gosod"
-	wailsRuntime "github.com/wailsapp/wails/v2/internal/frontend/runtime"
-	"github.com/wailsapp/wails/v2/internal/frontend/runtime/wrapper"
+	wailsRuntime "github.com/sergey-shpilevskiy/wails/v2/internal/frontend/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend/runtime/wrapper"
 
 	"github.com/pkg/errors"
 
 	"github.com/leaanthony/slicer"
-	"github.com/wailsapp/wails/v2/internal/assetdb"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/html"
-	"github.com/wailsapp/wails/v2/internal/project"
-	"github.com/wailsapp/wails/v2/internal/shell"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/assetdb"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/fs"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/html"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/project"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/shell"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/clilogger"
 )
 
 const (

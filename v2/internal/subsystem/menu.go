@@ -6,11 +6,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/menu"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/menumanager"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/menumanager"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
 )
 
 // Menu is the subsystem that handles the operation of menus. It manages all service bus messages

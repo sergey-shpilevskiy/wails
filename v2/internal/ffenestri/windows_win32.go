@@ -1,11 +1,12 @@
-//+build windows
+//go:build windows
+// +build windows
 
 package ffenestri
 
 import (
 	"unsafe"
 
-	"github.com/wailsapp/wails/v2/internal/menumanager"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/menumanager"
 	"golang.org/x/sys/windows"
 )
 

@@ -18,8 +18,8 @@ import (
 	"github.com/leaanthony/debme"
 	"github.com/leaanthony/gosod"
 	"github.com/olekukonko/tablewriter"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/fs"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/clilogger"
 )
 
 //go:embed templates

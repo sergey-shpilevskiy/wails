@@ -1,10 +1,11 @@
-//+build windows
+//go:build windows
+// +build windows
 
 package app
 
 import (
-	"github.com/wailsapp/wails/v2/internal/ffenestri/windows/wv2runtime"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/ffenestri/windows/wv2runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 )
 
 func (a *App) PreflightChecks(options *options.App) error {

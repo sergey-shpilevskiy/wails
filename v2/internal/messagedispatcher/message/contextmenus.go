@@ -3,7 +3,7 @@ package message
 import (
 	"fmt"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/menu"
 )
 
 // ContextMenusOnMessage is used to emit listener registration requests

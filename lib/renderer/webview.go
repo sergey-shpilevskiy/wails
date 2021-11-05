@@ -8,13 +8,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wailsapp/wails/runtime"
+	"github.com/sergey-shpilevskiy/wails/runtime"
 
 	"github.com/go-playground/colors"
-	"github.com/wailsapp/wails/lib/interfaces"
-	"github.com/wailsapp/wails/lib/logger"
-	"github.com/wailsapp/wails/lib/messages"
-	wv "github.com/wailsapp/wails/lib/renderer/webview"
+	"github.com/sergey-shpilevskiy/wails/lib/interfaces"
+	"github.com/sergey-shpilevskiy/wails/lib/logger"
+	"github.com/sergey-shpilevskiy/wails/lib/messages"
+	wv "github.com/sergey-shpilevskiy/wails/lib/renderer/webview"
 )
 
 // WebView defines the main webview application window

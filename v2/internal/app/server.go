@@ -8,15 +8,15 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 
 	"github.com/leaanthony/clir"
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
-	"github.com/wailsapp/wails/v2/internal/subsystem"
-	"github.com/wailsapp/wails/v2/internal/webserver"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/binding"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/subsystem"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/webserver"
 )
 
 // App defines a Wails application structure

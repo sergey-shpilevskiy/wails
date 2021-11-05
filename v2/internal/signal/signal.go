@@ -7,8 +7,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
 )
 
 // Manager manages signals such as CTRL-C

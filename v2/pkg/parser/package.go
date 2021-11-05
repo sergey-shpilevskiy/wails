@@ -39,13 +39,13 @@ func newPackage(pkg *packages.Package) *Package {
 func (p *Package) getWailsImportName(file *ast.File) string {
 	// Scan the imports for the wails v2 import
 	for _, details := range file.Imports {
-		if details.Path.Value == `"github.com/wailsapp/wails/v2"` {
+		if details.Path.Value == `"github.com/sergey-shpilevskiy/wails/v2"` {
 			if details.Name != nil {
 				return details.Name.Name
 			}
 
 			// Get the import name from the package
-			imp := p.getImportByPath("github.com/wailsapp/wails/v2")
+			imp := p.getImportByPath("github.com/sergey-shpilevskiy/wails/v2")
 			if imp != nil {
 				return imp.Name
 			}

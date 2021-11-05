@@ -92,7 +92,7 @@ JS 方法签名: `LogSetLogLevel(level: number)`
 
 ## 使用自定义日志
 
-可以通过使用应用程序参数选项 [日志](/docs/reference/options#日志) 提供自定义记录器来使用它。唯一的要求是记录器实现了在`github.com/wailsapp/wails/v2/pkg/logger`里`logger.Logger`定义的接口：
+可以通过使用应用程序参数选项 [日志](/docs/reference/options#日志) 提供自定义记录器来使用它。唯一的要求是记录器实现了在`github.com/sergey-shpilevskiy/wails/v2/pkg/logger`里`logger.Logger`定义的接口：
 
 ```go title="logger.go"
 type Logger interface {

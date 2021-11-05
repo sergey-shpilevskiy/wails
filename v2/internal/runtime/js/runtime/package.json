@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wailsapp/wails.git"
+    "url": "git+https://github.com/sergey-shpilevskiy/wails.git"
   },
   "keywords": [
     "Wails",
@@ -19,9 +19,9 @@
   "author": "Lea Anthony <lea.anthony@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wailsapp/wails/issues"
+    "url": "https://github.com/sergey-shpilevskiy/wails/issues"
   },
-  "homepage": "https://github.com/wailsapp/wails#readme",
+  "homepage": "https://github.com/sergey-shpilevskiy/wails#readme",
   "devDependencies": {
     "dts-gen": "^0.5.8"
   }

@@ -2,11 +2,11 @@ package messagedispatcher
 
 import (
 	"fmt"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/runtime"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher/message"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher/message"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
 )
 
 // Client defines what a frontend client can do

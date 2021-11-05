@@ -67,7 +67,7 @@ func ParseProject(projectPath string) (BoundStructs, error) {
 				// Parse import declarations
 				case *ast.ImportSpec:
 					// Determine what wails has been imported as
-					if x.Path.Value == `"github.com/wailsapp/wails/v2"` {
+					if x.Path.Value == `"github.com/sergey-shpilevskiy/wails/v2"` {
 						wailsPkgVar = x.Name.Name
 					}
 				// Parse calls. We are looking for app.Bind() calls

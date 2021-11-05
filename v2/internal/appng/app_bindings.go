@@ -5,13 +5,13 @@ package appng
 
 import (
 	"github.com/leaanthony/gosod"
-	"github.com/wailsapp/wails/v2/internal/binding"
-	wailsRuntime "github.com/wailsapp/wails/v2/internal/frontend/runtime"
-	"github.com/wailsapp/wails/v2/internal/frontend/runtime/wrapper"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/project"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/binding"
+	wailsRuntime "github.com/sergey-shpilevskiy/wails/v2/internal/frontend/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend/runtime/wrapper"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/fs"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/project"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 	"os"
 	"path/filepath"
 )

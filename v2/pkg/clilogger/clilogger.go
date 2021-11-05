@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/wailsapp/wails/v2/internal/colour"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/colour"
 )
 
 // CLILogger is used by the cli

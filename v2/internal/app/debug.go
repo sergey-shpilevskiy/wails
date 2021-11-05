@@ -7,7 +7,7 @@ import (
 	"flag"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/pkg/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/logger"
 )
 
 // Init initialises the application for a debug environment

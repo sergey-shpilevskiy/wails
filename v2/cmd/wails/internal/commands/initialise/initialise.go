@@ -11,14 +11,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wailsapp/wails/v2/pkg/buildassets"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/buildassets"
 
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/commands/initialise/templates"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal/commands/initialise/templates"
 
 	"github.com/leaanthony/clir"
 	"github.com/pkg/errors"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
-	"github.com/wailsapp/wails/v2/pkg/git"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/clilogger"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/git"
 )
 
 // AddSubcommand adds the `init` command for the Wails application

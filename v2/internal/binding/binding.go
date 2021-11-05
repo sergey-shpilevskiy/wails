@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/leaanthony/slicer"
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
 )
 
 type Bindings struct {

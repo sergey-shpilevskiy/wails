@@ -22,11 +22,11 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/frontend/assetserver"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/binding"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend/assetserver"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 )
 
 type request struct {

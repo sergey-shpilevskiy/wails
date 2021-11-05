@@ -2,12 +2,12 @@ package build
 
 import (
 	"fmt"
-	"github.com/wailsapp/wails/v2/pkg/buildassets"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/buildassets"
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/html"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/fs"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/html"
 )
 
 // DesktopBuilder builds applications for the desktop

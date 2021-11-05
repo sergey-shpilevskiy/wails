@@ -2,12 +2,12 @@ package webserver
 
 import (
 	"context"
-	"github.com/wailsapp/wails/v2/pkg/menu"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/menu"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/runtime"
 	"net/http"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
 	ws "nhooyr.io/websocket"
 	"nhooyr.io/websocket/wsjson"
 )

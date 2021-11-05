@@ -41,15 +41,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/palenight');
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/wailsapp/wails/edit/master/website',
+            sidebarPath: require.resolve('./sidebars.js'),
+            // Please change this to your repo.
+            editUrl: 'https://github.com/sergey-shpilevskiy/wails/edit/master/website',
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-              'https://github.com/wailsapp/wails/edit/master/website/blog/',
+            showReadingTime: true,
+            // Please change this to your repo.
+            editUrl:
+                'https://github.com/sergey-shpilevskiy/wails/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -92,21 +92,21 @@ const darkCodeTheme = require('prism-react-renderer/themes/palenight');
             {
               to: 'https://github.com/sponsors/leaanthony',
               label: 'Sponsor',
-              position: 'left',
+                position: 'left',
             },
-            {
-              type: 'doc',
-              docId: 'about',
-              position: 'right',
-              label: 'About',
-            },
-            {to: '/blog', label: 'Blog', position: 'right'},
-            {type: 'localeDropdown', position: 'right',},
-            {
-              href: 'https://github.com/wailsapp/wails',
-              label: 'GitHub',
-              position: 'right',
-            },
+              {
+                  type: 'doc',
+                  docId: 'about',
+                  position: 'right',
+                  label: 'About',
+              },
+              {to: '/blog', label: 'Blog', position: 'right'},
+              {type: 'localeDropdown', position: 'right',},
+              {
+                  href: 'https://github.com/sergey-shpilevskiy/wails',
+                  label: 'GitHub',
+                  position: 'right',
+              },
           ],
         },
         footer: {
@@ -124,20 +124,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/palenight');
             {
               title: 'Community',
               items: [
-                {
-                  label: 'Github',
-                  href: 'https://github.com/wailsapp/wails',
-                },
-                {
-                  label: 'Twitter',
-                  href: 'https://twitter.com/wailsapp',
-                },
-                {
-                  label: 'Slack',
-                  href: 'https://gophers.slack.com/messages/CJ4P9F7MZ/',
-                },
-                {
-                  label: 'Slack invite',
+                  {
+                      label: 'Github',
+                      href: 'https://github.com/sergey-shpilevskiy/wails',
+                  },
+                  {
+                      label: 'Twitter',
+                      href: 'https://twitter.com/wailsapp',
+                  },
+                  {
+                      label: 'Slack',
+                      href: 'https://gophers.slack.com/messages/CJ4P9F7MZ/',
+                  },
+                  {
+                      label: 'Slack invite',
                   href: 'https://invite.slack.golangbridge.org/',
                 },
               ],

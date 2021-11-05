@@ -6,8 +6,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
 )
 
 // Log is the Logging subsystem. It handles messages with topics starting

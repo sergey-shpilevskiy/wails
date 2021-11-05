@@ -3,8 +3,8 @@
 package wails
 
 import (
-	app "github.com/wailsapp/wails/v2/internal/appng"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	app "github.com/sergey-shpilevskiy/wails/v2/internal/appng"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 )
 
 // Run creates an application based on the given config and executes it

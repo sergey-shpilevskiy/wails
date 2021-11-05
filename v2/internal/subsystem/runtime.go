@@ -3,8 +3,8 @@ package subsystem
 import (
 	"context"
 	"fmt"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
 	"strings"
 	"sync"
 )

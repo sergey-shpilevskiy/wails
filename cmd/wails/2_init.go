@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 
 	"github.com/leaanthony/spinner"
-	"github.com/wailsapp/wails/cmd"
+	"github.com/sergey-shpilevskiy/wails/cmd"
 )
 
 func init() {

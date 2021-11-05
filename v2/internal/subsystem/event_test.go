@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/matryer/is"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher/message"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher/message"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
 )
 
 func TestSingleTopic(t *testing.T) {

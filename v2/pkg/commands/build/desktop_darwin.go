@@ -1,3 +1,4 @@
+//go:build darwin
 // +build darwin
 
 package build
@@ -11,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/leaanthony/slicer"
-	"github.com/wailsapp/wails/v2/internal/fs"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/fs"
 )
 
 func (d *DesktopBuilder) convertToHexLiteral(bytes []byte) string {

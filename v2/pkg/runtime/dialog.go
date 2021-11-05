@@ -2,7 +2,7 @@ package runtime
 
 import (
 	"context"
-	"github.com/wailsapp/wails/v2/internal/frontend"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend"
 )
 
 // FileFilter defines a filter for dialog boxes

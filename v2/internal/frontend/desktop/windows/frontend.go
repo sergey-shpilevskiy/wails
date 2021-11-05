@@ -16,11 +16,11 @@ import (
 	"github.com/leaanthony/go-webview2/pkg/edge"
 	"github.com/leaanthony/winc"
 	"github.com/leaanthony/winc/w32"
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/frontend/assetserver"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/binding"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend/assetserver"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 )
 
 type Frontend struct {

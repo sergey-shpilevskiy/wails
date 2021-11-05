@@ -1,4 +1,4 @@
-module github.com/wailsapp/wails/v2
+module github.com/sergey-shpilevskiy/wails/v2
 
 go 1.17
 

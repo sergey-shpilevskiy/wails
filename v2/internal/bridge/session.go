@@ -7,12 +7,12 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/wailsapp/wails/v2/internal/menumanager"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/menumanager"
 
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher"
 
 	"github.com/gorilla/websocket"
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
 )
 
 //go:embed darwin.js

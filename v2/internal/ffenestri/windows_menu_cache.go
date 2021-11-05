@@ -1,10 +1,11 @@
-//+build windows
+//go:build windows
+// +build windows
 
 package ffenestri
 
 import (
 	"github.com/leaanthony/idgen"
-	"github.com/wailsapp/wails/v2/internal/menumanager"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/menumanager"
 	"sync"
 )
 

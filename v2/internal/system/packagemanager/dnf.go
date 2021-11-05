@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package packagemanager
@@ -6,7 +7,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/shell"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/shell"
 )
 
 // Dnf represents the Dnf manager

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wailsapp/wails/lib/logger"
-	"github.com/wailsapp/wails/lib/messages"
-	"github.com/wailsapp/wails/runtime"
+	"github.com/sergey-shpilevskiy/wails/lib/logger"
+	"github.com/sergey-shpilevskiy/wails/lib/messages"
+	"github.com/sergey-shpilevskiy/wails/runtime"
 )
 
 type internalMethods struct {

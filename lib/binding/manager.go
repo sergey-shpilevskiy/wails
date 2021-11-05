@@ -9,9 +9,9 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/wailsapp/wails/lib/interfaces"
-	"github.com/wailsapp/wails/lib/logger"
-	"github.com/wailsapp/wails/lib/messages"
+	"github.com/sergey-shpilevskiy/wails/lib/interfaces"
+	"github.com/sergey-shpilevskiy/wails/lib/logger"
+	"github.com/sergey-shpilevskiy/wails/lib/messages"
 )
 
 var typescriptDefinitionFilename = ""

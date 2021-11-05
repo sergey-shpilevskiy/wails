@@ -11,7 +11,7 @@ const basic string = `module changeme
 
 go 1.17
 
-require github.com/wailsapp/wails/v2 v2.0.0-beta.7
+require github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7
 
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
@@ -45,7 +45,7 @@ require (
 	golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 // indirect
 )
 
-//replace github.com/wailsapp/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+//replace github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 `
 
 func TestGetWailsVersion(t *testing.T) {
@@ -75,7 +75,7 @@ const basicUpdated string = `module changeme
 
 go 1.17
 
-require github.com/wailsapp/wails/v2 v2.0.0-beta.15
+require github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.15
 
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
@@ -109,7 +109,7 @@ require (
 	golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 // indirect
 )
 
-//replace github.com/wailsapp/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+//replace github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 `
 
 const multilineRequire = `module changeme
@@ -117,7 +117,7 @@ const multilineRequire = `module changeme
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.7
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7
 )
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
@@ -151,14 +151,14 @@ require (
 	golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 // indirect
 )
 
-//replace github.com/wailsapp/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+//replace github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 `
 const multilineReplace = `module changeme
 
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.7
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7
 )
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
@@ -192,7 +192,7 @@ require (
 	golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 // indirect
 )
 
-replace github.com/wailsapp/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+replace github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 `
 
 const multilineReplaceNoVersion = `module changeme
@@ -200,7 +200,7 @@ const multilineReplaceNoVersion = `module changeme
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.7
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7
 )
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
@@ -234,7 +234,7 @@ require (
 	golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 // indirect
 )
 
-replace github.com/wailsapp/wails/v2 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+replace github.com/sergey-shpilevskiy/wails/v2 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 `
 
 const multilineReplaceNoVersionBlock = `module changeme
@@ -242,7 +242,7 @@ const multilineReplaceNoVersionBlock = `module changeme
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.7
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7
 )
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
@@ -277,7 +277,7 @@ require (
 )
 
 replace (
-	github.com/wailsapp/wails/v2 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+	github.com/sergey-shpilevskiy/wails/v2 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 )
 `
 
@@ -286,7 +286,7 @@ const multilineReplaceBlock = `module changeme
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.7
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7
 )
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
@@ -321,7 +321,7 @@ require (
 )
 
 replace (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 )
 `
 
@@ -330,7 +330,7 @@ const multilineRequireUpdated = `module changeme
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.15
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.15
 )
 
 require (
@@ -365,7 +365,7 @@ require (
 	golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 // indirect
 )
 
-//replace github.com/wailsapp/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+//replace github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.7 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 `
 
 func TestUpdateGoModVersion(t *testing.T) {
@@ -433,7 +433,7 @@ const multilineReplaceUpdated = `module changeme
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.15
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.15
 )
 
 require (
@@ -468,14 +468,14 @@ require (
 	golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 // indirect
 )
 
-replace github.com/wailsapp/wails/v2 v2.0.0-beta.15 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+replace github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.15 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 `
 const multilineReplaceNoVersionUpdated = `module changeme
 
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.15
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.15
 )
 
 require (
@@ -510,14 +510,14 @@ require (
 	golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 // indirect
 )
 
-replace github.com/wailsapp/wails/v2 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+replace github.com/sergey-shpilevskiy/wails/v2 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 `
 const multilineReplaceNoVersionBlockUpdated = `module changeme
 
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.15
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.15
 )
 
 require (
@@ -553,7 +553,7 @@ require (
 )
 
 replace (
-	github.com/wailsapp/wails/v2 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+	github.com/sergey-shpilevskiy/wails/v2 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 )
 `
 
@@ -562,7 +562,7 @@ const multilineReplaceBlockUpdated = `module changeme
 go 1.17
 
 require (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.15
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.15
 )
 
 require (
@@ -598,6 +598,6 @@ require (
 )
 
 replace (
-	github.com/wailsapp/wails/v2 v2.0.0-beta.15 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
+	github.com/sergey-shpilevskiy/wails/v2 v2.0.0-beta.15 => C:\Users\leaan\Documents\wails-v2-beta\wails\v2
 )
 `

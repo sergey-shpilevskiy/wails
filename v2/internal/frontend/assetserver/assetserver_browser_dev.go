@@ -5,8 +5,8 @@ package assetserver
 
 import (
 	"bytes"
-	"github.com/wailsapp/wails/v2/internal/frontend/runtime"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 	"golang.org/x/net/html"
 	"path/filepath"
 	"strings"

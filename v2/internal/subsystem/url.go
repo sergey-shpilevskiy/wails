@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
 )
 
 // URL is the URL Handler subsystem. It handles messages with topics starting

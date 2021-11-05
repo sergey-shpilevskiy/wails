@@ -3,7 +3,7 @@ package generate
 import (
 	"io"
 
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/commands/generate/template"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal/commands/generate/template"
 
 	"github.com/leaanthony/clir"
 )

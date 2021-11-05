@@ -3,8 +3,8 @@ package dispatcher
 import (
 	"encoding/json"
 	"errors"
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 	"strconv"
 	"strings"
 )

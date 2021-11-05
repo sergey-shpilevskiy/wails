@@ -6,12 +6,12 @@ import (
 	"log"
 	"os"
 
-	"github.com/wailsapp/wails/v2/internal/shell"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/shell"
 
-	"github.com/wailsapp/wails/v2/internal/github"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/github"
 
 	"github.com/leaanthony/clir"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/clilogger"
 )
 
 // AddSubcommand adds the `init` command for the Wails application
@@ -151,7 +151,7 @@ func updateToVersion(logger *clilogger.CLILogger, targetVersion *github.Semantic
 		log.Fatal("Cannot find home directory! Please file a bug report!")
 	}
 
-	sout, serr, err := shell.RunCommand(homeDir, "go", "install", "github.com/wailsapp/wails/v2/cmd/wails@"+desiredVersion)
+	sout, serr, err := shell.RunCommand(homeDir, "go", "install", "github.com/sergey-shpilevskiy/wails/v2/cmd/wails@"+desiredVersion)
 	if err != nil {
 		logger.Println("Failed.")
 		logger.Println(sout + `\n` + serr)
@@ -160,7 +160,7 @@ func updateToVersion(logger *clilogger.CLILogger, targetVersion *github.Semantic
 	logger.Println("\n")
 	logger.Println("Wails CLI updated to " + desiredVersion)
 	logger.Println("Make sure you update your project go.mod file to use " + desiredVersion + ":")
-	logger.Println("  require github.com/wailsapp/wails/v2 " + desiredVersion)
+	logger.Println("  require github.com/sergey-shpilevskiy/wails/v2 " + desiredVersion)
 
 	return nil
 }

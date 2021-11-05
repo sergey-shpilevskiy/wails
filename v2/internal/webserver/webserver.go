@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/wailsapp/wails/v2/internal/assetdb"
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher"
-	"github.com/wailsapp/wails/v2/internal/subsystem"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/assetdb"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/binding"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/subsystem"
 )
 
 // WebServer serves the application over http

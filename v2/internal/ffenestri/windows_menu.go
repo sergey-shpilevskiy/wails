@@ -1,12 +1,13 @@
-//+build windows
+//go:build windows
+// +build windows
 
 package ffenestri
 
 import (
 	"fmt"
-	"github.com/wailsapp/wails/v2/internal/menumanager"
-	"github.com/wailsapp/wails/v2/pkg/menu"
-	"github.com/wailsapp/wails/v2/pkg/menu/keys"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/menumanager"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/menu"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/menu/keys"
 	"runtime"
 	"strings"
 )

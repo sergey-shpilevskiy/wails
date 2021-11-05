@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/wailsapp/wails/lib/logger"
+	"github.com/sergey-shpilevskiy/wails/lib/logger"
 )
 
 type boundMethod struct {

@@ -2,19 +2,19 @@ package main
 
 import (
 	"fmt"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal"
 	"os"
 
-	"github.com/wailsapp/wails/v2/internal/colour"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/colour"
 
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/commands/update"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal/commands/update"
 
 	"github.com/leaanthony/clir"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/commands/build"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/commands/dev"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/commands/doctor"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/commands/generate"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/commands/initialise"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal/commands/build"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal/commands/dev"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal/commands/doctor"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal/commands/generate"
+	"github.com/sergey-shpilevskiy/wails/v2/cmd/wails/internal/commands/initialise"
 )
 
 func fatal(message string) {

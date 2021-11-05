@@ -1,7 +1,7 @@
 package bridge
 
 import (
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/runtime"
 )
 
 type BridgeClient struct {

@@ -5,13 +5,13 @@ import (
 	"embed"
 	"log"
 
-	"github.com/wailsapp/wails/v2/pkg/options/mac"
-	"github.com/wailsapp/wails/v2/pkg/options/windows"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options/mac"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options/windows"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/menu"
 
 	"github.com/imdario/mergo"
-	"github.com/wailsapp/wails/v2/pkg/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/logger"
 )
 
 // App contains options for creating the App

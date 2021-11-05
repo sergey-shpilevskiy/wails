@@ -1,5 +1,5 @@
 module {{.BinaryName}}
 
 require (
-	github.com/wailsapp/wails {{.WailsVersion}}
+	github.com/sergey-shpilevskiy/wails {{.WailsVersion}}
 )

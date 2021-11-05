@@ -1,6 +1,6 @@
 package webserver
 
-import "github.com/wailsapp/wails/v2/internal/assetdb"
+import "github.com/sergey-shpilevskiy/wails/v2/internal/assetdb"
 
 var (
 	// WebAssets is our single asset db instance.

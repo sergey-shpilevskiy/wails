@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/html"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/fs"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/html"
 )
 
 // ServerBuilder builds applications as a server

@@ -4,7 +4,7 @@ package windows
 
 import (
 	"github.com/leaanthony/go-common-file-dialog/cfd"
-	"github.com/wailsapp/wails/v2/internal/frontend"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/frontend"
 	"golang.org/x/sys/windows"
 	"syscall"
 )

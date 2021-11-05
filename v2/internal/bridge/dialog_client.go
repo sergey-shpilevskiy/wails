@@ -2,14 +2,14 @@ package bridge
 
 import (
 	"fmt"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/runtime"
 	"os/exec"
 	"strconv"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
 
 	"github.com/leaanthony/slicer"
 )

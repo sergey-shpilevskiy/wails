@@ -1,6 +1,6 @@
 package menumanager
 
-import "github.com/wailsapp/wails/v2/pkg/menu"
+import "github.com/sergey-shpilevskiy/wails/v2/pkg/menu"
 
 func (m *Manager) SetApplicationMenu(applicationMenu *menu.Menu) error {
 

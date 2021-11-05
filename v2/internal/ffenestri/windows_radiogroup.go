@@ -1,4 +1,5 @@
-//+build windows
+//go:build windows
+// +build windows
 
 package ffenestri
 
@@ -9,7 +10,7 @@ import (
 	"sync"
 	"text/tabwriter"
 
-	"github.com/wailsapp/wails/v2/internal/menumanager"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/menumanager"
 )
 
 /* ---------------------------------------------------------------------------------

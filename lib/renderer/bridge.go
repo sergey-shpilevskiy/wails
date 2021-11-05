@@ -1,7 +1,7 @@
 package renderer
 
 import (
-	bridge "github.com/wailsapp/wails/lib/renderer/bridge"
+	bridge "github.com/sergey-shpilevskiy/wails/lib/renderer/bridge"
 )
 
 // NewBridge returns a new Bridge struct

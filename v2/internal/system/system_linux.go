@@ -4,8 +4,8 @@
 package system
 
 import (
-	"github.com/wailsapp/wails/v2/internal/system/operatingsystem"
-	"github.com/wailsapp/wails/v2/internal/system/packagemanager"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/system/operatingsystem"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/system/packagemanager"
 )
 
 func (i *Info) discover() error {

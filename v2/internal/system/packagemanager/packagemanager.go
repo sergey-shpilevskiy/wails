@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package packagemanager
@@ -6,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/shell"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/shell"
 )
 
 // A list of package manager commands

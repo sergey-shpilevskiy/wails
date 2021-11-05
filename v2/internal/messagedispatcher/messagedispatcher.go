@@ -3,15 +3,15 @@ package messagedispatcher
 import (
 	"context"
 	"encoding/json"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/runtime"
 	"strconv"
 	"strings"
 	"sync"
 
-	"github.com/wailsapp/wails/v2/internal/crypto"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher/message"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/crypto"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher/message"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
 )
 
 // Dispatcher translates messages received from the frontend

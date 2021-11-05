@@ -1,3 +1,4 @@
+//go:build !windows
 // +build !windows
 
 package ffenestri
@@ -12,9 +13,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/runtime"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
 )
 
 // Client is our implementation of messageDispatcher.Client

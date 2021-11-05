@@ -4,15 +4,15 @@ import (
 	"os"
 	"syscall"
 
+	"github.com/sergey-shpilevskiy/wails/cmd"
+	"github.com/sergey-shpilevskiy/wails/lib/binding"
+	"github.com/sergey-shpilevskiy/wails/lib/event"
+	"github.com/sergey-shpilevskiy/wails/lib/interfaces"
+	"github.com/sergey-shpilevskiy/wails/lib/ipc"
+	"github.com/sergey-shpilevskiy/wails/lib/logger"
+	"github.com/sergey-shpilevskiy/wails/lib/renderer"
+	wailsruntime "github.com/sergey-shpilevskiy/wails/runtime"
 	"github.com/syossan27/tebata"
-	"github.com/wailsapp/wails/cmd"
-	"github.com/wailsapp/wails/lib/binding"
-	"github.com/wailsapp/wails/lib/event"
-	"github.com/wailsapp/wails/lib/interfaces"
-	"github.com/wailsapp/wails/lib/ipc"
-	"github.com/wailsapp/wails/lib/logger"
-	"github.com/wailsapp/wails/lib/renderer"
-	wailsruntime "github.com/wailsapp/wails/runtime"
 )
 
 // -------------------------------- Compile time Flags ------------------------------

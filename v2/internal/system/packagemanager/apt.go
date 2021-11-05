@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package packagemanager
@@ -6,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/shell"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/shell"
 )
 
 // Apt represents the Apt manager

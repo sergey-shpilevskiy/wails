@@ -7,15 +7,15 @@ import (
 	"context"
 	"sync"
 
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/ffenestri"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/menumanager"
-	"github.com/wailsapp/wails/v2/internal/messagedispatcher"
-	"github.com/wailsapp/wails/v2/internal/servicebus"
-	"github.com/wailsapp/wails/v2/internal/signal"
-	"github.com/wailsapp/wails/v2/internal/subsystem"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/binding"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/ffenestri"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/menumanager"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/messagedispatcher"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/servicebus"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/signal"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/subsystem"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
 )
 
 // App defines a Wails application structure

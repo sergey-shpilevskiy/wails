@@ -1,3 +1,4 @@
+//go:build windows
 // +build windows
 
 package ffenestri
@@ -10,13 +11,13 @@ import "C"
 import (
 	"encoding/json"
 	"github.com/leaanthony/go-common-file-dialog/cfd"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/runtime"
 	"golang.org/x/sys/windows"
 	"log"
 	"strconv"
 	"syscall"
 
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/internal/logger"
 )
 
 // Client is our implementation of messageDispatcher.Client

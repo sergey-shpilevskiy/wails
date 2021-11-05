@@ -4,10 +4,10 @@ import (
 	"embed"
 	"log"
 
-	"github.com/wailsapp/wails/v2"
-	"github.com/wailsapp/wails/v2/pkg/logger"
-	"github.com/wailsapp/wails/v2/pkg/options"
-	"github.com/wailsapp/wails/v2/pkg/options/windows"
+	"github.com/sergey-shpilevskiy/wails/v2"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/logger"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options"
+	"github.com/sergey-shpilevskiy/wails/v2/pkg/options/windows"
 )
 
 //go:embed frontend/dist
@@ -33,10 +33,10 @@ func main() {
 		HideWindowOnClose: false,
 		RGBA:              &options.RGBA{255, 255, 255, 255},
 		Assets:            assets,
-		LogLevel:   logger.DEBUG,
-		OnStartup:  app.startup,
-		OnDomReady: app.domReady,
-		OnShutdown: app.shutdown,
+		LogLevel:          logger.DEBUG,
+		OnStartup:         app.startup,
+		OnDomReady:        app.domReady,
+		OnShutdown:        app.shutdown,
 		Bind: []interface{}{
 			app,
 		},

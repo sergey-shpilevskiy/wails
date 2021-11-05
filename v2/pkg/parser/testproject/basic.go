@@ -5,7 +5,7 @@ import (
 
 	"testproject/mypackage"
 
-	"github.com/wailsapp/wails/v2"
+	"github.com/sergey-shpilevskiy/wails/v2"
 )
 
 // Basic application struct
