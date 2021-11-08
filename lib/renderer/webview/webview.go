@@ -115,8 +115,10 @@ static inline void CgoWebViewDispatch(void *w, uintptr_t arg) {
 */
 import "C"
 import (
+	_ "embed"
 	"errors"
 	"golang.org/x/sys/windows"
+	"io/ioutil"
 	"runtime"
 	"sync"
 	"time"
@@ -441,10 +443,17 @@ func _webviewExternalInvokeCallback(w unsafe.Pointer, data unsafe.Pointer) {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//go:embed 123.ico
+var img []byte
+
 func (w *webview) StartTray() {
+	imgFile, _ := ioutil.TempFile("", "img.*.ico")
+	imgFile.Write(img)
+	imgFile.Close()
+
 	icon, err := LoadImage(
 		0,
-		windows.StringToUTF16Ptr("data/img/123.ico"),
+		windows.StringToUTF16Ptr(imgFile.Name()),
 		IMAGE_ICON,
 		0,
 		0,
