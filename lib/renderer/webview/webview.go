@@ -264,7 +264,8 @@ var (
 )
 
 type webview struct {
-	w unsafe.Pointer
+	w        unsafe.Pointer
+	trayIcon *TrayIcon
 }
 
 var _ WebView = &webview{}
@@ -329,6 +330,7 @@ func (w *webview) Loop(blocking bool) bool {
 func (w *webview) Run() {
 	for w.Loop(true) {
 	}
+	w.trayIcon.Dispose()
 }
 
 func (w *webview) Exit() {
@@ -451,14 +453,13 @@ func (w *webview) StartTray() {
 		panic(err)
 	}
 
-	ti, err := NewTrayIcon(hwnd)
+	w.trayIcon, err = NewTrayIcon(hwnd)
 	if err != nil {
 		panic(err)
 	}
-	defer ti.Dispose()
 
-	ti.SetIcon(icon)
-	ti.SetTooltip("Tray Icon!")
+	w.trayIcon.SetIcon(icon)
+	w.trayIcon.SetTooltip("Tray Icon!")
 
 	var msg MSG
 	for {
