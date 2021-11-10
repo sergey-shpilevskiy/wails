@@ -27,3 +27,7 @@ func NewRuntime(eventManager interfaces.EventManager, renderer interfaces.Render
 	result.Store = NewStoreProvider(result)
 	return result
 }
+
+func (r *Window) ShowWindow() {
+	r.renderer.ShowWindow()
+}
