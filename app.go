@@ -82,6 +82,10 @@ func CreateApp(optionalConfig ...*AppConfig) *App {
 	return result
 }
 
+func (a *App) ShowWindow() {
+	a.renderer.ShowWindow()
+}
+
 // Run the app
 func (a *App) Run() error {
 

@@ -173,6 +173,7 @@ struct webview_priv
   WEBVIEW_API int webview(const char *title, const char *url, int width,
                           int height, int resizable);
 //123
+  WEBVIEW_API void showWindowCustom(struct webview *w);
   WEBVIEW_API HWND testFunc(struct webview *w);
   WEBVIEW_API int webview_init(struct webview *w);
   WEBVIEW_API int webview_loop(struct webview *w, int blocking);
@@ -331,7 +332,11 @@ struct webview_priv
     (void)userdata;
     return TRUE;
   }
-
+  WEBVIEW_API void showWindowCustom(struct webview *w)
+  {
+    ShowWindow(w->priv.hwnd, SW_NORMAL);
+    SetForegroundWindow(w->priv.hwnd);
+  }
   WEBVIEW_API HWND testFunc(struct webview *w)
   {
     printf("--%d",w->priv.hwnd);
@@ -1513,6 +1518,11 @@ struct webview_priv
     RegCloseKey(hKey);
     return 0;
   }
+  WEBVIEW_API void showWindowCustom(struct webview *w)
+    {
+      ShowWindow(w->priv.hwnd, SW_NORMAL);
+      SetForegroundWindow(w->priv.hwnd);
+    }
   WEBVIEW_API HWND testFunc(struct webview *w)
     {
       printf("--%d",w->priv.hwnd);
@@ -2154,6 +2164,11 @@ struct webview_priv
     }
     w->external_invoke_cb(w, [(NSString *)(arg) UTF8String]);
   }
+  WEBVIEW_API void showWindowCustom(struct webview *w)
+    {
+      ShowWindow(w->priv.hwnd, SW_NORMAL);
+      SetForegroundWindow(w->priv.hwnd);
+    }
   WEBVIEW_API HWND testFunc(struct webview *w)
   {
         printf("--%d",w->priv.hwnd);

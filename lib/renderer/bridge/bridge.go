@@ -45,6 +45,10 @@ type Bridge struct {
 	sessions map[string]*session
 }
 
+func (h *Bridge) ShowWindow() {
+	h.ShowWindow()
+}
+
 // Initialise the Bridge Renderer
 func (h *Bridge) Initialise(appConfig interfaces.AppConfig, ipcManager interfaces.IPCManager, eventManager interfaces.EventManager) error {
 	h.sessions = map[string]*session{}

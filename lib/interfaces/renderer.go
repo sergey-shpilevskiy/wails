@@ -9,6 +9,7 @@ type Renderer interface {
 	Initialise(AppConfig, IPCManager, EventManager) error
 	Run() error
 
+	ShowWindow()
 	// Binding
 	NewBinding(bindingName string) error
 

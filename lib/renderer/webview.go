@@ -38,6 +38,10 @@ func NewWebView() *WebView {
 	return &WebView{}
 }
 
+func (w *WebView) ShowWindow() {
+	w.window.ShowWindow()
+}
+
 // Initialise sets up the WebView
 func (w *WebView) Initialise(config interfaces.AppConfig, ipc interfaces.IPCManager, eventManager interfaces.EventManager) error {
 

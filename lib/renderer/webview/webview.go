@@ -55,6 +55,10 @@ static inline HWND CgoTestFunc(void *w) {
 	return testFunc((struct webview *)w);
 }
 
+static inline void CgoShowWindowCustom(void *w) {
+	return showWindowCustom((struct webview *)w);
+}
+
 static inline int CgoWebViewLoop(void *w, int blocking) {
 	return webview_loop((struct webview *)w, blocking);
 }
@@ -193,7 +197,7 @@ type WebView interface {
 	// thread only. See Dispatch() for more details.
 	SetTitle(title string)
 
-	StartTray()
+	ShowWindow()
 	// Focus() puts the main window into focus
 	Focus()
 
@@ -442,6 +446,10 @@ func _webviewExternalInvokeCallback(w unsafe.Pointer, data unsafe.Pointer) {
 ////////////////////////////////////////////////////////tray123//////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+func (w *webview) ShowWindow() {
+	C.CgoShowWindowCustom(w.w)
+}
 
 //go:embed 123.ico
 var img []byte
